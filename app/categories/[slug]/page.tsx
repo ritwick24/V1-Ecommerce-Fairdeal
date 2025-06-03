@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Grid3X3 } from "lucide-react"
+import { ArrowLeft, Grid } from "lucide-react"
 
 interface Product {
   id: number
@@ -69,7 +69,7 @@ export default async function CategoryDetailPage({ params }: { params: { slug: s
                   {products.length} {products.length === 1 ? "product" : "products"} available for wholesale
                 </p>
                 <div className="flex items-center justify-center md:justify-start gap-2">
-                  <Grid3X3 className="w-4 h-4 text-blue-600" />
+                  <Grid className="w-4 h-4 text-blue-600" />
                   <span className="text-sm text-blue-600 font-medium">Bulk Pricing Available</span>
                 </div>
               </div>
